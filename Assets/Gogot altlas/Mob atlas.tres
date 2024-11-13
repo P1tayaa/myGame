@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cv4a36a15rese"]
+
+[ext_resource type="Texture2D" uid="uid://dnocmie2bbrx3" path="res://Assets/Basic Undead 1x.png" id="1_difyd"]
+
+[resource]
+atlas = ExtResource("1_difyd")
+region = Rect2(54, 0, 18, 18)

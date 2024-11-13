@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl62scodllibh"]
+
+[ext_resource type="PackedScene" uid="uid://v3pje88ggni2" path="res://samples.ldtk" id="1_sbgjn"]
+
+[node name="samples" instance=ExtResource("1_sbgjn")]
+
+[node name="Level_0" parent="." index="0"]
+texture_filter = 1
+
+[node name="Level_1" parent="." index="1"]
+texture_filter = 1

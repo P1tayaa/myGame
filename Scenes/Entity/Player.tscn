@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://2vb8xmhps6wf"]
+
+[ext_resource type="Script" path="res://Scripts/Mains/player.gd" id="1_krcnh"]
+[ext_resource type="Texture2D" uid="uid://cv4a36a15rese" path="res://Assets/Gogot altlas/Mob atlas.tres" id="1_rm4ou"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5egh8"]
+radius = 4.0
+height = 15.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qiack"]
+size = Vector2(8, 8)
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 3
+script = ExtResource("1_krcnh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0.5)
+shape = SubResource("CapsuleShape2D_5egh8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_rm4ou")
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("RectangleShape2D_qiack")
+target_position = Vector2(0, 0)
+collision_mask = 4
