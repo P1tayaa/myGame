@@ -1,13 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://doyclmg00m1ij"]
 
-[ext_resource type="PackedScene" uid="uid://bl62scodllibh" path="res://Scenes/World/World v0.1.tscn" id="1_wf025"]
 [ext_resource type="PackedScene" uid="uid://2vb8xmhps6wf" path="res://Scenes/Entity/Player.tscn" id="2_hhnq1"]
+[ext_resource type="PackedScene" uid="uid://v3pje88ggni2" path="res://samples.ldtk" id="2_s16ty"]
 
 [sub_resource type="Texture2DRD" id="Texture2DRD_re50c"]
 
 [node name="MainGame" type="Node2D"]
-
-[node name="samples" parent="." instance=ExtResource("1_wf025")]
 
 [node name="Player" parent="." instance=ExtResource("2_hhnq1")]
 position = Vector2(70, 91)
@@ -19,3 +17,5 @@ zoom = Vector2(2, 2)
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(-38, -29)
 texture = SubResource("Texture2DRD_re50c")
+
+[node name="samples" parent="." instance=ExtResource("2_s16ty")]
